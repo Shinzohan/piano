@@ -1,0 +1,115 @@
+body {
+  background: black;
+}
+h1{
+  color: aliceblue;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 40px;
+  
+  
+}
+
+.keyboard-container {
+  padding: 150px;
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+ 
+}
+
+.acc-container {
+  width: 960px;
+  display: grid;
+  grid-template-columns: repeat(42, 1fr);
+    height: 66%;
+  justify-items: center;
+}
+
+.acc-container button {
+  width: 58px;
+    background: #1b1b1e;
+    border: 1px solid #fff;
+    border-radius: 0 0 4px 4px;
+    cursor: pointer;
+    top: -299px;
+    position: relative;
+    z-index: 1;
+    border-top: none;
+}
+
+
+.acc-container button.p {
+  grid-column: 6 / span 2;
+}
+
+.acc-container button.l {
+  grid-column: 12 / span 3;
+}
+
+.acc-container button.v {
+  grid-column: 25 / span 2;
+}
+
+.acc-container button.n {
+  grid-column: 31 / span 2;
+}
+
+.acc-container button.z {
+  grid-column: 37 / span 1;
+}
+
+
+.nat-container {
+  width: 960px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  height: 300px;
+}
+
+.nat-container button {
+  background: #fff;
+  border: 1px solid #1b1b1e;
+  border-radius: 0 0 6px 6px;
+}
+
+button {
+      cursor: pointer;
+}
+
+.pressed{
+  
+  transform: translateY(5px);
+    border: 3px solid;
+    margin-top: -5px;
+    box-shadow: 0 2px 0 #000, inset 0 0 5px #000;
+    outline: rgba(225, 225, 225, 0);
+    background: white;
+  
+}
+
+
+
+button:active, button:focus {
+  height: 285px;
+  transform: translateY(5px);
+    border: 3px solid;
+    margin-top: -5px;
+    box-shadow: 0 2px 0 #000, inset 0 0 5px #000;
+    outline: rgba(225, 225, 225, 0);
+    background: white;
+  }
+
+.drum{
+  font-size: 30px;
+  font-family: sans-serif;
+  font-style: oblique;
+  font-variant: small-caps;
+  
+}
+
+footer{
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
